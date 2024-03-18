@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    <!--Styles-->
+    <link rel="stylesheet" href="resources/styles/standardization.css">
+    <link rel="stylesheet" href="resources/styles/style.css">
+    <link rel="shortcut icon" href="resources/images/favicon.png" type="image/x-icon">
+
+    <!--Scripts-->
+    <script src="resources/scripts/script.js"></script>
+    <title>Piedra papel o tijera</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__containerTitle">
+            <h1 class="header__title">Rock paper scissors game</h1>
+            <h2 class="header__subtitle">Best of three wins</h2>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <h2 id="main__title">Choose your move</h2>
+
+        <div class="main__containerDecisions" id="main__containerDecisions">
+            <div class="containerDecision">
+                <img class="containerDecision__img" src="resources/images/rock.svg" alt="rock" id="handRock"
+                    data-choice="Rock">
+            </div>
+
+            <div class="containerDecision">
+                <img class="containerDecision__img" src="resources/images/paper.svg" alt="paper" class="containerDecision__img" id="handPaper" data-choice="Paper">
+            </div>
+
+            <div class="containerDecision">
+                <img src="resources/images/scissor.svg" alt="scissors"
+                    class="containerDecision__img" id="handScissor" data-choice="Scissor">
+            </div>
+        </div>
+
+        <div id="main__containerMove" class="main__containerMove main__containerMove--hidden">
+            <div class="containerMove">
+                <h2 class="containerMove__played">Player played</h2>
+                <img class="containerMove__img" alt="playerPlayed" id="playerPlayed">
+            </div>
+
+            <div class="containerMove">
+                <h2 class="containerMove__vs">Versus</h2>
+                <img src="resources/images/versus.svg" alt="vsIcon" class="containerMove__img" id="vsIcon">
+            </div>
+
+            <div class="containerMove">
+                <h2 class="containerMove__played">Computer played</h2>
+                <img alt="computerPlayed" class="containerMove__img" id="computerPlayed">
+            </div>
+        </div>
+
+        <div id="main__containerResult">
+            <h2 id="containerResult"></h2>
+        </div>
+
+    </main>
+
+
+</body>
+
+</html>

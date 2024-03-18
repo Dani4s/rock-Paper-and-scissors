@@ -1,0 +1,134 @@
+:root {
+    --background-color: #535050;
+    --font-color-primary: #fff;
+    --font-madimi-one: "Madimi One";
+    --font-protest-riot: "Protest Riot";
+}
+
+.header {
+    background-color: var(--background-color);
+    text-align: center;
+    padding: 3rem;
+    color: var(--font-color-primary);
+    height: 15%;
+}
+
+.header__containerTitle,
+#main__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 150px;
+}
+
+.header__title,
+.header__subtitle,
+#main__title {
+    font-family: var(--font-madimi-one);
+    text-shadow: 1px 1px 1px black;
+}
+
+.header__title,
+#main__title {
+    font-size: 5rem;
+}
+
+.header__subtitle {
+    font-size: 3rem;
+}
+
+/* Main */
+
+#main__title {
+    text-align: center;
+    color: #ff0000;
+}
+
+.main__containerDecisions,
+#main__containerMove {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.main__containerMove{
+    pointer-events: none;
+}
+
+.main__containerMove--hidden{
+    opacity: 0;
+}
+
+.main__containerMove--show{
+    opacity: 1;
+    transition: all 500ms ease-in-out;
+
+}
+
+.containerDecision,
+.containerMove {
+    flex-basis: 33%;
+    height: 200px;
+    max-width: 200px;
+}
+
+.containerDecision__img,
+.containerMove__img {
+    height: 100%;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.containerDecision__img:hover {
+    transform: translateY(-5rem) scale(1.25);
+}
+
+
+.containerMove__played,
+.containerMove__vs{
+    text-align: center;
+    font-size: 3rem;
+    white-space:  nowrap;
+    margin-bottom: 2rem;
+    font-family: var(--font-protest-riot);
+    color: black;
+}
+
+.containerMove__vs{
+    opacity: 0;
+}
+
+/* Result */
+
+#main__containerResult {
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--font-madimi-one);
+    width: 50%;
+    padding: 3rem;
+    margin: 0 auto;
+    margin-top: 10rem;
+    border-radius: 25px;
+    transition: all 500ms ease-in-out;
+}
+
+.main__containerResult--win {
+    background-color: #046e0d;
+}
+
+.main__containerResult--tie {
+    background-color: #ecb143;
+}
+
+.main__containerResult--youLose {
+    background-color: #a70707;
+}
+
+
+
+
+
+
